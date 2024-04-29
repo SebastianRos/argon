@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Argon.sln"
+    "dotnet.defaultSolution": "Argon.sln",
+    "editor.formatOnSave": true
 }

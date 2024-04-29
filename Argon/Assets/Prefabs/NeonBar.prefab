@@ -93,6 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2426562159116530244}
+  - component: {fileID: 4555523065944952817}
   m_Layer: 0
   m_Name: NeonBar
   m_TagString: Untagged
@@ -117,6 +118,20 @@ Transform:
   - {fileID: 7747834383373500280}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4555523065944952817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2226549229698760013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec097ff206826f9eaebc0b34c052436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Core>k__BackingField: {fileID: 5688093174492220911}
+  <Glow>k__BackingField: {fileID: 5155554920750338632}
 --- !u!1 &8292411787233279215
 GameObject:
   m_ObjectHideFlags: 0
