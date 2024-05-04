@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -5,6 +6,7 @@ public class NeonElement : MonoBehaviour, NeonDriver {
   [field: SerializeField] private SpriteRenderer Core { get; set; }
   [field: SerializeField] private SpriteRenderer Glow { get; set; }
 
+  [HideInInspector, SerializeField]
   private Color _color = Color.white;
   public Color Color {
     get { return _color; }
@@ -15,6 +17,7 @@ public class NeonElement : MonoBehaviour, NeonDriver {
     }
   }
 
+  [HideInInspector, SerializeField]
   private bool _isOn = true;
   public bool IsOn {
     get { return _isOn; }
@@ -30,28 +33,5 @@ public class NeonElement : MonoBehaviour, NeonDriver {
 
 #if UNITY_EDITOR
 [CustomEditor(typeof(NeonElement))]
-public class NeonElementInspector : NeonDriverInspector {
-
-}
-
-// [CustomEditor(typeof(NeonElement))]
-// public class NeonElementInspector : Editor {
-//   private Color color = Color.white;
-//   private bool isOn = true;
-//   private NeonElement neonElement;
-
-//   private void OnEnable() {
-//     neonElement = (NeonElement)target;
-//     color = neonElement.Color;
-//   }
-
-//   public override void OnInspectorGUI() {
-//     base.OnInspectorGUI();
-
-//     isOn = EditorGUILayout.Toggle("IsOn", isOn);
-//     neonElement.IsOn = isOn;
-//     color = EditorGUILayout.ColorField("Color", color);
-//     neonElement.Color = color;
-//   }
-// }
+public class NeonElementInspector : NeonDriverInspector { }
 #endif

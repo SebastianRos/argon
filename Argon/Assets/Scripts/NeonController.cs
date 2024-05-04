@@ -2,7 +2,9 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class NeonController : MonoBehaviour, NeonDriver {
+  [HideInInspector, SerializeField]
   private Color _color;
   public Color Color {
     get { return _color; }
@@ -14,6 +16,7 @@ public class NeonController : MonoBehaviour, NeonDriver {
     }
   }
 
+  [HideInInspector, SerializeField]
   private bool _isOn;
   public bool IsOn {
     get { return _isOn; }
@@ -41,24 +44,18 @@ public class NeonController : MonoBehaviour, NeonDriver {
 
 #if UNITY_EDITOR
 [CustomEditor(typeof(NeonController))]
-
 public class NeonControllerInspector : NeonDriverInspector {
-  private NeonController neonController;
-
-  public override void OnEnable() {
-    base.OnEnable();
-    neonController = (NeonController)target;
-    neonController.UpdatedManagedNeons();
-  }
-
   public override void OnInspectorGUI() {
+    base.OnInspectorGUI();
+
+    NeonController neonController = (NeonController)target;
+
     EditorGUILayout.BeginHorizontal();
     EditorGUILayout.LabelField("Managed neons: " + neonController.ManagedNeonCount);
     if (GUILayout.Button("update")) {
       neonController.UpdatedManagedNeons();
     }
     EditorGUILayout.EndHorizontal();
-    base.OnInspectorGUI();
   }
 }
 #endif

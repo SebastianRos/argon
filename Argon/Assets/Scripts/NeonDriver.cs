@@ -9,23 +9,15 @@ public interface NeonDriver {
 
 #if UNITY_EDITOR
 public class NeonDriverInspector : Editor {
-  private Color color = Color.white;
-  private bool isOn = true;
-  private NeonDriver neonElement;
-
-  public virtual void OnEnable() {
-    neonElement = (NeonDriver)target;
-    color = neonElement.Color;
-  }
-
   public override void OnInspectorGUI() {
+    EditorGUILayout.PropertyField(serializedObject.FindProperty("_isOn"));
+    EditorGUILayout.PropertyField(serializedObject.FindProperty("_color"));
+    if (serializedObject.ApplyModifiedProperties()) {
+      NeonDriver neonDriver = (NeonDriver)target;
+      neonDriver.Color = neonDriver.Color;
+      neonDriver.IsOn = neonDriver.IsOn;
+    }
     base.OnInspectorGUI();
-
-    isOn = EditorGUILayout.Toggle("IsOn", isOn);
-    neonElement.IsOn = isOn;
-    color = EditorGUILayout.ColorField("Color", color);
-    neonElement.Color = color;
-
   }
 }
 #endif
