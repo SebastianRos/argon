@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 72dc60b325edee51b923b38a7c3596d1, type: 3}
-  m_Color: {r: 0.86248064, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Core>k__BackingField: {fileID: 5688093174492220911}
   <Glow>k__BackingField: {fileID: 5155554920750338632}
-  _color: {r: 0.86248064, g: 1, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _isOn: 1
 --- !u!1 &8292411787233279215
 GameObject:
