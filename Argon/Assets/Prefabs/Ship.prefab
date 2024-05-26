@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7513571932503315674}
   - component: {fileID: 3877040443744719502}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 7156134062711713403}
   - component: {fileID: 5944242745290561229}
   - component: {fileID: 5747777784727362300}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,9 +252,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 824541972798360679, guid: b29ecd65e65cfe7eb8ad78381673ebec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288610447878146018, guid: b29ecd65e65cfe7eb8ad78381673ebec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1469084137703374213, guid: b29ecd65e65cfe7eb8ad78381673ebec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2511915615903549916, guid: b29ecd65e65cfe7eb8ad78381673ebec, type: 3}
       propertyPath: m_Name
       value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511915615903549916, guid: b29ecd65e65cfe7eb8ad78381673ebec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636473228765733000, guid: b29ecd65e65cfe7eb8ad78381673ebec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2843626078216099574, guid: b29ecd65e65cfe7eb8ad78381673ebec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263840060694036123, guid: b29ecd65e65cfe7eb8ad78381673ebec, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 7303540398630122467, guid: ad7a0edecfb0f074cbbd6adc4fca4447, type: 3}
+    - target: {fileID: 7134452514304423842, guid: b29ecd65e65cfe7eb8ad78381673ebec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760035718529055783, guid: b29ecd65e65cfe7eb8ad78381673ebec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8939867844425958976, guid: b29ecd65e65cfe7eb8ad78381673ebec, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -279,9 +319,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7513571932503315674}
     m_Modifications:
+    - target: {fileID: 140783707118013615, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2226549229698760013, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: m_Name
       value: Neon Line (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226549229698760013, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2426562159116530244, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -347,6 +395,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 6.56
       objectReference: {fileID: 0}
+    - target: {fileID: 8292411787233279215, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8668914257360743950, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: _color.g
       value: 0
@@ -373,9 +425,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7513571932503315674}
     m_Modifications:
+    - target: {fileID: 140783707118013615, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2226549229698760013, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: m_Name
       value: Neon Line
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226549229698760013, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2426562159116530244, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -441,6 +501,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 8.6
       objectReference: {fileID: 0}
+    - target: {fileID: 8292411787233279215, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8668914257360743950, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: _color.g
       value: 0
@@ -467,9 +531,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7513571932503315674}
     m_Modifications:
+    - target: {fileID: 140783707118013615, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2226549229698760013, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: m_Name
       value: Neon Line
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226549229698760013, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2426562159116530244, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -535,6 +607,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 6.56
       objectReference: {fileID: 0}
+    - target: {fileID: 8292411787233279215, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8668914257360743950, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: _color.g
       value: 0
@@ -561,9 +637,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7513571932503315674}
     m_Modifications:
+    - target: {fileID: 140783707118013615, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2226549229698760013, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: m_Name
       value: Neon Line (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226549229698760013, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2426562159116530244, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -628,6 +712,10 @@ PrefabInstance:
     - target: {fileID: 5688093174492220911, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: m_Size.y
       value: 8.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292411787233279215, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8668914257360743950, guid: e1195d8dfbfb908d7b894825e04b863b, type: 3}
       propertyPath: _color.g

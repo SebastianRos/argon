@@ -18,8 +18,6 @@ public class Gun : MonoBehaviour, Fireable {
       Vector2 direction = transform.rotation * Vector2.up * bulletSpeed;
       bulletRb.velocity = direction;
     }
-    Bullet bulletScript = bullet.GetComponent<Bullet>();
-    bulletScript.origin = transform.parent.gameObject;
 
     if (audioSource) audioSource.PlayOneShot(audioSource.clip);
   }
