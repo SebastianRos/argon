@@ -1,4 +1,5 @@
 # argon
 ## Todo
 * random Fire Audio Clip pitch
-* Flicker
+* Ship damage on contact with asteroid
+* sound for asteroid destruction
