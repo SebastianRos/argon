@@ -8,10 +8,10 @@ public class Bullet : MonoBehaviour {
   public GameObject origin;
 
   public void Start() {
-    StartCoroutine(destroyAfterLiveTime());
+    StartCoroutine(DestroyAfterLiveTime());
   }
 
-  private IEnumerator destroyAfterLiveTime() {
+  private IEnumerator DestroyAfterLiveTime() {
     yield return new WaitForSeconds(liveTime);
     Destroy(gameObject);
   }

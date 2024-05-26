@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DestroyOnHealth : MonoBehaviour, Observer {
+public class DestroyByHealth : MonoBehaviour, Observer {
   [SerializeField] private HealthCounter healthCounter;
 
   public void Awake() {
@@ -8,7 +8,7 @@ public class DestroyOnHealth : MonoBehaviour, Observer {
   }
 
   public void Notify() {
-    int health = healthCounter.Health;
+    float health = healthCounter.Health;
     if (health <= 0) {
       Destroy(gameObject);
     }

@@ -1,4 +1,5 @@
-using Unity.VisualScripting;
+using System;
+using System.Collections;
 using UnityEditor;
 using UnityEngine;
 
@@ -28,6 +29,38 @@ public class NeonElement : MonoBehaviour, NeonDriver {
       else
         Glow.color = Color.clear;
     }
+  }
+
+  [SerializeField] private float minDuration;
+  [SerializeField] private float maxDuration;
+  [SerializeField] private float minOffTime;
+  [SerializeField] private float maxOffTime;
+  [SerializeField] private float lowerMinNextOff;
+  [SerializeField] private float upperMinNextOff;
+  [SerializeField] private float lowerMaxNextOff;
+  [SerializeField] private float upperMaxNextOff;
+  public void Flicker(float intensity) {
+    StopAllCoroutines();
+    StartCoroutine(FlickerCoroutine(intensity));
+  }
+  private IEnumerator FlickerCoroutine(float intensity) {
+    float endTime = Time.time + Mathf.Lerp(minDuration, maxDuration, intensity);
+
+    while (Time.time < endTime) {
+      float offTime = UnityEngine.Random.Range(
+        minOffTime,
+        Mathf.Lerp(minOffTime, maxOffTime, intensity)
+      );
+      IsOn = false;
+      yield return new WaitForSeconds(offTime);
+      float nextOff = UnityEngine.Random.Range(
+        Mathf.Lerp(upperMinNextOff, lowerMinNextOff, intensity),
+        Mathf.Lerp(upperMaxNextOff, lowerMaxNextOff, intensity)
+      );
+      IsOn = true;
+      yield return new WaitForSeconds(nextOff);
+    }
+    yield return null;
   }
 }
 

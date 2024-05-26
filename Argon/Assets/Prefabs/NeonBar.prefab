@@ -134,6 +134,14 @@ MonoBehaviour:
   <Glow>k__BackingField: {fileID: 5155554920750338632}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _isOn: 1
+  minDuration: 0.2
+  maxDuration: 2
+  minOffTime: 0
+  maxOffTime: 0.5
+  lowerMinNextOff: 0
+  upperMinNextOff: 0.2
+  lowerMaxNextOff: 0.1
+  upperMaxNextOff: 0.6
 --- !u!1 &8292411787233279215
 GameObject:
   m_ObjectHideFlags: 0

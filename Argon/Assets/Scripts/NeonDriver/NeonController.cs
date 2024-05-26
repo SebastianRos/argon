@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
@@ -39,6 +40,17 @@ public class NeonController : MonoBehaviour, NeonDriver {
 
   public void Awake() {
     UpdatedManagedNeons();
+  }
+  public void Start() {
+    foreach (NeonDriver neonDriver in managedNeons) {
+      neonDriver.Color = Color;
+    }
+  }
+
+  public void Flicker(float intensity) {
+    foreach (NeonDriver neonDriver in managedNeons) {
+      neonDriver.Flicker(intensity);
+    }
   }
 }
 
